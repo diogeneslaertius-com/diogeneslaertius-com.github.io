@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regression Metrics Simulator | By Rysbek</title>
+    <style>
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #f4f7f6; color: #333; margin: 0; padding: 20px; display: flex; flex-direction: column; align-items: center; }
+        .container { max-width: 900px; width: 100%; background: white; padding: 30px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); }
+        h1 { text-align: center; color: #2c3e50; margin-bottom: 10px; }
+        p.subtitle { text-align: center; color: #7f8c8d; margin-bottom: 30px; }
+        
+        .layout { display: grid; grid-template-columns: 2fr 1fr; gap: 20px; }
+        
+        canvas { background: #fafafa; border: 1px solid #ddd; border-radius: 8px; cursor: crosshair; width: 100%; box-shadow: inset 0 0 10px rgba(0,0,0,0.05); }
+        
+        .controls-panel { display: flex; flex-direction: column; gap: 20px; }
+        
+        .stats-grid { display: grid; grid-template-columns: 1fr; gap: 15px; }
+        .metric-card { background: #fff; border: 1px solid #eee; padding: 15px; border-radius: 8px; text-align: center; box-shadow: 0 2px 5px rgba(0,0,0,0.05); transition: 0.3s; }
+        .metric-card:hover { transform: translateY(-2px); box-shadow: 0 4px 10px rgba(0,0,0,0.1); }
+        .metric-value { display: block; font-size: 1.8em; font-weight: bold; color: #2980b9; }
+        .metric-name { font-size: 0.9em; color: #7f8c8d; text-transform: uppercase; font-weight: bold; }
+        
+        .btn-group { display: flex; flex-direction: column; gap: 10px; }
+        button { background-color: #3498db; color: white; border: none; padding: 12px; border-radius: 6px; cursor: pointer; font-weight: bold; font-size: 1em; transition: 0.2s; }
+        button:hover { background-color: #2980b9; }
+        button.danger { background-color: #e74c3c; }
+        button.danger:hover { background-color: #c0392b; }
+        
+        .toggle-group { background: #f9f9f9; padding: 15px; border-radius: 8px; border: 1px solid #eee; }
+        .toggle-group label { display: flex; align-items: center; gap: 10px; cursor: pointer; font-weight: bold; font-size: 0.9em; }
+        .toggle-group input[type="checkbox"] { transform: scale(1.2); }
+        
+        .instructions { font-size: 0.85em; color: #7f8c8d; background: #fffdf0; border-left: 4px solid #f1c40f; padding: 10px; border-radius: 4px; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Тренажер метрик регрессии</h1>
+    <p class="subtitle">Перетаскивай точки, чтобы увидеть, как выбросы ломают метрики</p>
+
+    <div class="layout">
+        <div class="canvas-container">
+            <canvas id="regCanvas" width="600" height="400"></canvas>
+        
+        </div>
+
+        <div class="controls-panel">
+            <div class="stats-grid">
+                <div class="metric-card" id="card-mae">
+                    <span id="val-mae" class="metric-value">0.00</span>
+                    <span class="metric-name">MAE (Средняя абс. ошибка)</span>
+                </div>
+                <div class="metric-card" id="card-mse" style="border-left: 4px solid #e74c3c;">
+                    <span id="val-mse" class="metric-value">0.00</span>
+                    <span class="metric-name">MSE (Квадратичная ошибка)</span>
+                </div>
+                <div class="metric-card" id="card-rmse">
+                    <span id="val-rmse" class="metric-value">0.00</span>
+                    <span class="metric-name">RMSE (Корень из MSE)</span>
+                </div>
+            </div>
+
+            <div class="toggle-group">
+                <label>
+                    <input type="checkbox" id="showSquares" checked>
+                    Показывать квадраты ошибок (Визуализация MSE)
+                </label>
+            </div>
+
+            <div class="btn-group">
+                <button class="danger" id="btnAddOutlier">Добавить жесткий выброс</button>
+                <button id="btnReset">Сбросить точки</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
