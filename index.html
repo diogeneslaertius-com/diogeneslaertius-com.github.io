@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
-  <title>Рысбек Оразымбетов | 3D Environment & Game Designer</title>
+  <title>Рысбек Оразымбетов | Инженер-конструктор / Проектировщик (ПГС)</title>
   
   <!-- Шрифт Plus Jakarta Sans -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -19,41 +19,6 @@
     /* ==========================================================================
        1. СБРОС СТИЛЕЙ И ГЛОБАЛЬНЫЕ ПЕРЕМЕННЫЕ
        ========================================================================== */
-.hero-actions {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  margin-top: 14px;
-}
-
-.btn-contact {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  padding: 8px 14px;
-  background: rgba(255, 255, 255, 0.04);
-  border: 1px solid var(--border-color);
-  border-radius: 10px;
-  color: var(--text-main);
-  text-decoration: none;
-  font-weight: 600;
-  font-size: 0.85rem;
-  transition: var(--transition);
-}
-
-.btn-contact:hover {
-  background: rgba(99, 102, 241, 0.15);
-  border-color: var(--accent);
-  color: #fff;
-  transform: translateY(-2px);
-  box-shadow: 0 4px 15px var(--accent-glow);
-}
-
-.btn-contact svg {
-  width: 16px;
-  height: 16px;
-  fill: currentColor;
-}
     :root {
       --bg-main: #0f1115;
       --bg-card: rgba(22, 25, 32, 0.75);
@@ -225,6 +190,42 @@
       font-weight: 500;
     }
 
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 14px;
+    }
+
+    .btn-contact {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 14px;
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid var(--border-color);
+      border-radius: 10px;
+      color: var(--text-main);
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 0.85rem;
+      transition: var(--transition);
+    }
+
+    .btn-contact:hover {
+      background: rgba(99, 102, 241, 0.15);
+      border-color: var(--accent);
+      color: #fff;
+      transform: translateY(-2px);
+      box-shadow: 0 4px 15px var(--accent-glow);
+    }
+
+    .btn-contact svg {
+      width: 16px;
+      height: 16px;
+      fill: currentColor;
+    }
+
     .meta-list {
       display: flex;
       flex-wrap: wrap;
@@ -338,7 +339,7 @@
     }
 
     /* ==========================================================================
-       5. ИНТЕРАКТИВНЫЙ THREE.JS БЛОК С УВЕЛИЧЕННЫМ ВЬЮПОРТОМ
+       5. ИНТЕРАКТИВНЫЙ THREE.JS БЛОК
        ========================================================================== */
     .portfolio-trigger-container {
       text-align: center;
@@ -460,11 +461,10 @@
       cursor: not-allowed;
     }
 
-    /* Увеличенная область просмотра 3D-модели */
     .canvas-relative-container {
       position: relative;
       width: 100%;
-      height: 540px; /* Увеличено для лучшей детализации */
+      height: 540px;
       background: #08090c;
     }
 
@@ -474,7 +474,6 @@
       touch-action: none;
     }
 
-    /* Кнопка полноэкранного режима */
     .fullscreen-btn {
       position: absolute;
       top: 12px;
@@ -591,60 +590,65 @@
   <div class="container">
     
     <!-- ШАПКА -->
- <!-- ШАПКА -->
-<header class="section-card hero">
-  <div class="hero-profile">
-    <div class="avatar-wrapper">
-      <img 
-        src="./avatar.png" 
-        alt="Ivan Ivanov" 
-        class="avatar-img"
-        onerror="this.onerror=null; this.src='data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 24 24\' fill=\'%236366f1\'><path d=\'M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z\'/></svg>'"
-      />
-      <div class="status-badge" title="Доступен к проектам"></div>
-    </div>
+    <header class="section-card hero">
+      <div class="hero-profile">
+        <div class="avatar-wrapper">
+          <img 
+            src="./avatar.png" 
+            alt="Рысбек Оразымбетов" 
+            class="avatar-img"
+            onerror="this.onerror=null; this.src='data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 24 24\' fill=\'%236366f1\'><path d=\'M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z\'/></svg>'"
+          />
+          <div class="status-badge" title="Доступен к проектам / работе"></div>
+        </div>
 
-    <div class="hero-info">
-      <div class="hero-badge">3D & Game Design</div>
-      <h1 class="user-name">Рысбек Оразымбетов</h1>
-      <h2 class="hero-title">Дизайнер / Гейм-дизайнер</h2>
-      <p class="hero-subtitle">Специалист по 3D-графике, окружению и визуалу</p>
+        <div class="hero-info">
+          <div class="hero-badge">Инженерия & Проектирование</div>
+          <h1 class="user-name">Рысбек Оразымбетов</h1>
+          <h2 class="hero-title">Инженер-конструктор / Проектировщик (ПГС)</h2>
+          <p class="hero-subtitle">Проектирование металлоконструкций (КМ/КМД), 3D-моделирование и разработка чертежей</p>
 
-      <div class="hero-actions">
-        <a href="https://t.me/bashkitty" target="_blank" rel="noopener noreferrer" class="btn-contact">
-          <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69.01-.03.01-.14-.07-.2-.08-.06-.19-.04-.27-.02-.12.02-1.96 1.25-5.54 3.69-.52.36-1 .53-1.42.52-.47-.01-1.37-.26-2.03-.48-.82-.27-1.47-.42-1.42-.88.03-.24.37-.49 1.02-.75 3.99-1.74 6.66-2.88 8.01-3.44 3.82-1.58 4.61-1.86 5.13-1.86.11 0 .37.03.54.17.14.12.18.28.2.45-.02.07-.02.16-.04.29z"/></svg>
-          Telegram: @bashkitty
-        </a>
+          <div class="hero-actions">
+            <a href="https://t.me/bashkitty" target="_blank" rel="noopener noreferrer" class="btn-contact">
+              <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69.01-.03.01-.14-.07-.2-.08-.06-.19-.04-.27-.02-.12.02-1.96 1.25-5.54 3.69-.52.36-1 .53-1.42.52-.47-.01-1.37-.26-2.03-.48-.82-.27-1.47-.42-1.42-.88.03-.24.37-.49 1.02-.75 3.99-1.74 6.66-2.88 8.01-3.44 3.82-1.58 4.61-1.86 5.13-1.86.11 0 .37.03.54.17.14.12.18.28.2.45-.02.07-.02.16-.04.29z"/></svg>
+              Telegram: @bashkitty
+            </a>
 
-        <a href="mailto:r.orazymbetov@zohomail.com" class="btn-contact">
-          <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
-          r.orazymbetov@zohomail.com
-        </a>
+            <a href="mailto:r.orazymbetov@zohomail.com" class="btn-contact">
+              <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+              r.orazymbetov@zohomail.com
+            </a>
+          </div>
+        </div>
       </div>
-    </div>
-  </div>
-  
-  <div class="meta-list">
-    <div class="meta-item">Возраст: <strong>21 год</strong></div>
-    <div class="meta-item">•</div>
-    <div class="meta-item">Локация: <strong>Караганда</strong></div>
-    <div class="meta-item">•</div>
-    <div class="meta-item">Образование: <strong>КарГУ им. Букетова (Дизайн, 3 курс)</strong></div>
-  </div>
-</header>
+      
+      <div class="meta-list">
+        <div class="meta-item">Возраст: <strong>21 год</strong></div>
+        <div class="meta-item">•</div>
+        <div class="meta-item">Локация: <strong>Темиртау / Караганда</strong></div>
+        <div class="meta-item">•</div>
+        <div class="meta-item">Образование: <strong>КарИУ (Промышленное и гражданское строительство, 3 курс)</strong></div>
+      </div>
+    </header>
+
     <!-- О СЕБЕ -->
     <section class="section-card">
       <h2 class="section-title">О себе</h2>
       <p class="about-text">
-        Мой путь начался с академического рисунка и изучения пропорций, светотени и композиции. Переход в цифровое 3D-моделирование стал естественной эволюцией: фундаментальные художественные навыки позволяют мне создавать проработанное, объёмное и атмосферное окружение с глубокой проработкой деталей и логики пространства.
+        Студент 3-го курса КарИУ по специальности «Промышленное и гражданское строительство» (ПГС), Факультет металлургии. Специализируюсь на 3D-моделировании строительных конструкций, разработке чертежей (КМ/КМД) и пространственном проектировании объектов промышленного назначения. Опыт работы в 3D-графике позволяет создавать высокоточные визуализации и объемные модели инженерных узлов с соблюдением норм ГОСТ и ЕСКД.
       </p>
       
-      <div class="skills-title">Ключевые навыки & софт</div>
+      <div class="skills-title">Профессиональный софт & Инженерные навыки</div>
       <div class="skills-grid">
-        <div class="skill-tag">Blender</div>
-        <div class="skill-tag">3ds Max</div>
-        <div class="skill-tag">Maya</div>
-        <div class="skill-tag">Marvelous Designer</div>
+        <div class="skill-tag">КОМПАС-3D</div>
+        <div class="skill-tag">AutoCAD</div>
+        <div class="skill-tag">Проектирование КМ / КМД</div>
+        <div class="skill-tag">Чтение чертежей и ГОСТ/ЕСКД</div>
+        <div class="skill-tag">3D-моделирование металлоконструкций</div>
+        <div class="skill-tag">Blender (3D-визуализация)</div>
+        <div class="skill-tag">3ds Max / Maya</div>
+        <div class="skill-tag">Excel / Расчетные таблицы</div>
+        <div class="skill-tag">SQL</div>
         <div class="skill-tag">Three.js / WebGL</div>
         <div class="skill-tag">Пространственное мышление</div>
       </div>
@@ -652,22 +656,22 @@
 
     <!-- ОПЫТ РАБОТЫ -->
     <section class="section-card">
-      <h2 class="section-title">Опыт работы</h2>
+      <h2 class="section-title">Опыт работы и проектирования</h2>
       <div class="experience-card">
         <div class="exp-header">
           <div class="company-name">Playrix</div>
-          <div class="exp-period">12.02.2025 – 29.07.2025 (7 месяцев)</div>
+          <div class="exp-period">10.02.2024 – 30.03.2025 (1 год 1 месяц)</div>
         </div>
-        <div class="exp-role">Гейм-дизайнер / 3D Environment Artist</div>
+        <div class="exp-role">3D Environment Artist / Моделлер пространственных объектов</div>
         <p class="exp-desc">
-          Проектирование детализированных интерьеров, экстерьеров и настройка динамики освещения (лампы, фонари, архитектурный свет) для флагманского проекта <strong>Gardenscapes</strong>.
+          Проектирование и 3D-моделирование сложносоставных архитектурных объектов, пространственных конструкций и интерьеров. Настройка освещения, эргономики пространства и соблюдение точных пропорций в графических пакетах.
         </p>
       </div>
     </section>
 
     <!-- ИНТЕРАКТИВНОЕ 3D ПОРТФОЛИО -->
     <section class="section-card">
-      <h2 class="section-title">Интерактивное 3D-портфолио</h2>
+      <h2 class="section-title">Интерактивное 3D-портфолио конструкций</h2>
       
       <div class="portfolio-trigger-container">
         <button id="toggle-3d-btn" class="btn-glow">
@@ -676,7 +680,7 @@
             <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
             <line x1="12" y1="22.08" x2="12" y2="12"></line>
           </svg>
-          <span id="btn-text">Показать мои проекты (3D)</span>
+          <span id="btn-text">Показать 3D-модели (Конструкции)</span>
         </button>
       </div>
 
@@ -704,7 +708,7 @@
           
           <div id="model-loader" class="model-loader-overlay">
             <div class="spinner"></div>
-            <div class="loader-text">Загрузка 3D-интерьера (.glb)...</div>
+            <div class="loader-text">Загрузка 3D-модели (.glb)...</div>
           </div>
 
           <div class="webgl-hint">💡 Вращение палец/ЛКМ • Приближение щипок/колесико</div>
@@ -715,35 +719,35 @@
 
     <!-- FOOTER -->
     <footer>
-      <p>© Рысбек Оразымбетов • 3D Environment & Game Designer</p>
+      <p>© Рысбек Оразымбетов • Инженер-конструктор (ПГС)</p>
     </footer>
 
   </div>
 
   <!-- ==========================================================================
-     JAVASCRIPT: THREE.JS + АЛГОРИТМ АВТО-КАДРИРОВАНИЯ ИНТЕРЬЕРА
+     JAVASCRIPT: THREE.JS + АЛГОРИТМ АВТО-КАДРИРОВАНИЯ ИНЖЕНЕРНЫХ МОДЕЛЕЙ
      ========================================================================== -->
   <script>
     const projectsData = [
       {
-        title: "Интерьер №1 — Лофт-гостиная",
-        desc: "Детализированная интерьерная сцена с акцентным световым дизайном, настроенными материалами и мебелью.",
-        file: "./assets/models/interior_loft.glb"
+        title: "Проект №1 — Каркас промышленного здания (КМ/КМД)",
+        desc: "Пространственная 3D-модель несущего стального каркаса: колонны, связевые фермы, подкрановые балки и прогоны.",
+        file: "./assets/models/frame_building.glb"
       },
       {
-        title: "Интерьер №2 — Двухуровневые апартаменты",
-        desc: "Проектирование приватного пространства, проработка текстиля в Marvelous Designer и настройка естественного освещения.",
-        file: "./assets/models/interior_aparts.glb"
+        title: "Проект №2 — Узел опирания металлической фермы",
+        desc: "Детализированная модель узла сопряжения стропильной фермы с колонной на опорном столике с высокопрочными болтами.",
+        file: "./assets/models/steel_node.glb"
       },
       {
-        title: "Декорации №1 — Кухонный быт эпохи СССР",
-        desc: "Low-poly / Mid-poly ассеты окружения с ручной запечкой карт высот и сгенерированным архитектурным светом.",
-        file: "./assets/models/decor_asset.glb"
+        title: "Проект №3 — Складской комплекс / Промышленный ангар",
+        desc: "Проектирование и визуализация металлоконструкций прямостенного ангара с зашивкой сэндвич-панелями.",
+        file: "./assets/models/hangar_structure.glb"
       },
       {
-        title: "Декорации №2 — Реквизит гангстерского кабинета",
-        desc: "Комплект тематического реквизита: автомат Томпсона, наличные деньги, счетчик банкнот, классический кожаный диван и массивный выдвижной шкаф.",
-        file: "./assets/models/decor_gangster.glb"
+        title: "Проект №4 — Архитектурно-строительный объем производственного цеха",
+        desc: "Общая 3D-компоновка цеха с учетом габаритов технологического оборудования и мостовых кранов.",
+        file: "./assets/models/factory_layout.glb"
       }
     ];
 
@@ -771,7 +775,7 @@
       const isActive = webglWrapper.classList.toggle('active');
 
       if (isActive) {
-        btnText.textContent = 'Свернуть 3D-сцену';
+        btnText.textContent = 'Свернуть 3D-модели';
         if (!isInitialized) {
           initThreeJS();
           isInitialized = true;
@@ -779,7 +783,7 @@
           setTimeout(onWindowResize, 300);
         }
       } else {
-        btnText.textContent = 'Показать мои проекты (3D)';
+        btnText.textContent = 'Показать 3D-модели (Конструкции)';
       }
     });
 
@@ -790,7 +794,6 @@
       scene = new THREE.Scene();
       scene.background = new THREE.Color(0x08090c);
 
-      // Равномерный широкоугольный камерный обзор (FOV = 50°)
       camera = new THREE.PerspectiveCamera(50, width / height, 0.05, 1000);
 
       renderer = new THREE.WebGLRenderer({ antialias: true, alpha: false });
@@ -805,9 +808,8 @@
       controls = new THREE.OrbitControls(camera, renderer.domElement);
       controls.enableDamping = true;
       controls.dampingFactor = 0.05;
-      controls.maxPolarAngle = Math.PI / 2 - 0.01; // Не уходить под пол
+      controls.maxPolarAngle = Math.PI / 2 - 0.01;
 
-      // Освещение интерьера
       const ambientLight = new THREE.AmbientLight(0xffffff, 1.4);
       scene.add(ambientLight);
 
@@ -831,7 +833,6 @@
       window.addEventListener('orientationchange', () => setTimeout(onWindowResize, 200));
     }
 
-    // Загрузка модели и рассчет оптимальной камеры
     function loadProjectModel(index) {
       loaderOverlay.classList.add('visible');
 
@@ -865,15 +866,12 @@
           });
 
           scene.add(currentLoadedMesh);
-          
-          // Вызов умного алгоритма кадрирования под размеры интерьера
           fitCameraToModel(currentLoadedMesh);
-          
           loaderOverlay.classList.remove('visible');
         },
         undefined,
         (error) => {
-          console.warn(`[3D] Файл ${project.file} не найден. Показываем качественную 3D-заглушку.`);
+          console.warn(`[3D] Файл ${project.file} не найден. Показываем инженерную процедурную заглушку.`);
           createFallbackProceduralRoom();
           fitCameraToModel(currentLoadedMesh);
           loaderOverlay.classList.remove('visible');
@@ -881,34 +879,27 @@
       );
     }
 
-    // Алгоритм идеального позиционирования камеры под размеры модели
     function fitCameraToModel(model) {
       const box = new THREE.Box3().setFromObject(model);
       const center = box.getCenter(new THREE.Vector3());
       const size = box.getSize(new THREE.Vector3());
 
-      // Сдвигаем интерьер так, чтобы его центр был ровно в (0, 0, 0)
       model.position.x = -center.x;
-      model.position.y = -box.min.y; // Выравниваем пол по нулевой отметке
+      model.position.y = -box.min.y;
       model.position.z = -center.z;
 
-      const maxDim = Math.max(size.x, size.y, size.z);
       const fovRad = (camera.fov * Math.PI) / 180;
 
-      // Вычисляем расстояние с учетом горизонтального и вертикального FOV
       let cameraDistance = (size.y / 2) / Math.tan(fovRad / 2);
       const fitWidthDistance = (size.x / 2) / (Math.tan(fovRad / 2) * camera.aspect);
       
-      cameraDistance = Math.max(cameraDistance, fitWidthDistance) * 1.25; // 25% отступ по краям
+      cameraDistance = Math.max(cameraDistance, fitWidthDistance) * 1.25;
 
-      // Позиционируем камеру с красивого полу-изометрического ракурса
       camera.position.set(0, size.y * 0.8, cameraDistance);
       
-      // Направляем камеру в центр интерьера
       const targetY = size.y * 0.4;
       controls.target.set(0, targetY, 0);
 
-      // Разрешаем глубокий зум, чтобы заглянуть внутрь комнаты
       controls.minDistance = 0.2;
       controls.maxDistance = cameraDistance * 3.5;
 
@@ -919,41 +910,38 @@
       controls.update();
     }
 
-    // Качественный тестовый интерьер, если .glb файл еще не загружен
+    // Заглушка: Модель стального каркаса/фермы
     function createFallbackProceduralRoom() {
       currentLoadedMesh = new THREE.Group();
 
-      // Пол
-      const floorGeo = new THREE.BoxGeometry(6, 0.1, 4);
-      const floorMat = new THREE.MeshStandardMaterial({ color: 0x222630, roughness: 0.3 });
-      const floor = new THREE.Mesh(floorGeo, floorMat);
-      floor.position.y = -0.05;
-      floor.receiveShadow = true;
-      currentLoadedMesh.add(floor);
+      const baseGeo = new THREE.BoxGeometry(8, 0.2, 5);
+      const baseMat = new THREE.MeshStandardMaterial({ color: 0x1f2430, roughness: 0.5 });
+      const base = new THREE.Mesh(baseGeo, baseMat);
+      base.position.y = -0.1;
+      base.receiveShadow = true;
+      currentLoadedMesh.add(base);
 
-      // Задняя стена
-      const wallGeo = new THREE.BoxGeometry(6, 3, 0.1);
-      const wallMat = new THREE.MeshStandardMaterial({ color: 0x161922, roughness: 0.7 });
-      const wall = new THREE.Mesh(wallGeo, wallMat);
-      wall.position.set(0, 1.5, -2);
-      wall.receiveShadow = true;
-      currentLoadedMesh.add(wall);
+      // Колонны (стальные двухтавры/профили)
+      const colGeo = new THREE.BoxGeometry(0.3, 3.5, 0.3);
+      const steelMat = new THREE.MeshStandardMaterial({ color: 0x6366f1, metalness: 0.8, roughness: 0.3 });
 
-      // Диван
-      const sofaGeo = new THREE.BoxGeometry(2.6, 0.6, 1.2);
-      const sofaMat = new THREE.MeshStandardMaterial({ color: 0x6366f1, roughness: 0.4 });
-      const sofa = new THREE.Mesh(sofaGeo, sofaMat);
-      sofa.position.set(0, 0.3, -1);
-      sofa.castShadow = true;
-      currentLoadedMesh.add(sofa);
+      const positions = [[-3.5, -2], [-3.5, 2], [3.5, -2], [3.5, 2]];
+      positions.forEach(([x, z]) => {
+        const col = new THREE.Mesh(colGeo, steelMat);
+        col.position.set(x, 1.75, z);
+        col.castShadow = true;
+        currentLoadedMesh.add(col);
+      });
 
-      // Журнальный столик
-      const tableGeo = new THREE.BoxGeometry(1.4, 0.35, 0.7);
-      const tableMat = new THREE.MeshStandardMaterial({ color: 0x0f1115, roughness: 0.2, metalness: 0.8 });
-      const table = new THREE.Mesh(tableGeo, tableMat);
-      table.position.set(0, 0.175, 0.3);
-      table.castShadow = true;
-      currentLoadedMesh.add(table);
+      // Верхняя ферма / балка
+      const beamGeo = new THREE.BoxGeometry(7.3, 0.25, 0.3);
+      const beam1 = new THREE.Mesh(beamGeo, steelMat);
+      beam1.position.set(0, 3.5, -2);
+      currentLoadedMesh.add(beam1);
+
+      const beam2 = new THREE.Mesh(beamGeo, steelMat);
+      beam2.position.set(0, 3.5, 2);
+      currentLoadedMesh.add(beam2);
 
       scene.add(currentLoadedMesh);
     }
@@ -984,7 +972,6 @@
       }
     });
 
-    // Режим Fullscreen
     fullscreenBtn.addEventListener('click', () => {
       if (!document.fullscreenElement) {
         canvasContainerBox.requestFullscreen().catch(err => {
@@ -1005,7 +992,6 @@
       camera.updateProjectionMatrix();
       renderer.setSize(width, height);
 
-      // При изменении размеров экрана пересчитываем кадрирование для текущей модели
       if (currentLoadedMesh) {
         fitCameraToModel(currentLoadedMesh);
       }
